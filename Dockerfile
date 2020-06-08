@@ -16,4 +16,4 @@ RUN mkdir -p /opt/provar/build_dir
 RUN wget https://download.provartesting.com/2.0.5/Provar_ANT_2.0.5.04.zip -P /opt/provar
 RUN unzip /opt/provar/Provar_ANT_2.0.5.04.zip -d /opt/provar
 COPY . /opt/provar/build_dir
-CMD ["/bin/bash","/opt/provar/build_dir/script.sh"]
+ENTRYPOINT ["/opt/provar/build_dir/script.sh"]
