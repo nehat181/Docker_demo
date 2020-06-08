@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 ENV DEBIAN_FRONTEND=noninteractive
-ENV PROVAR_HOME=/opt/provar
+ENV PROVAR_HOME=/opt/provar/build_dir
 #USER sysadmin
 #WORKDIR=/opt/provar/
 RUN apt-get update && apt install -y \
