@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ant -f /opt/provar/build_dir/test/ANT/build.xml
+cd /opt/provar/build_dir/test/ANT
+ant -f build.xml
